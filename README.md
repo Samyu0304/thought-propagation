@@ -1,11 +1,10 @@
 # [ICLR 2024] Thought Propagation: An analogical approach to complex reasoning with large language models.
-This repo holds the code, data and instructions to reproduce the results in Thought Propagation (TP).
+This repo holds the code, data, and instructions to reproduce the <a href='https://openreview.net/forum?id=SBoRhRCzM3&referrer=%5Bthe%20profile%20of%20Junchi%20Yu%5D(%2Fprofile%3Fid%3D~Junchi_Yu1)'>Thought Propagation (TP)</a> results.
 <<<<<<< HEAD
 # Thought-Propagation (TP)
 =======
 # Introduction
 ## Thought-Propagation (TP)
->>>>>>> 63906db3a20a5467c16c0cfa292bbce2a50ca27d
 Analogical reasoning is fundamental to human cognition as humans usually solve new problems by reusing experiences in handling similar problems. Motivated by such a reasoning process from humans, Thought Propagation (TP) teaches Large Language Models (LLMs) to explore analogous problems related to the input one and distill useful experience to facilitate input problem-solving.
 ## What is the thought in TP?
 The thought usually refers to a solution to a sub-problem of the input problem. The solution to the input problem is produced by chaining such thoughts together. <b>However, the thought in TP refers to the solution to a problem instead of a sub-problem.</b>
@@ -14,11 +13,6 @@ Many prompt-based reasoning methods, such as <a href='https://arxiv.org/pdf/2005
 1. ease the difficulty of solving complex problems with the prior knowledge of such insights,
 2. refine the initial solutions to input problems as reasoning from scratch is sensitive to the hallucinations and mistakes made by LLMs.
 Thus, TP propagates the thoughts of solving similar problems (aka analogous problems) to amend the limitations of reasoning from scratch.
-## How to produce and propagate thoughts?
-<a href='https://arxiv.org/pdf/2305.05994.pdf'>Previous work</a> constructs external knowledge bases, such as knowledge graphs, to retrieve thoughts in terms of 'A is to B what C is to D' to instantiate analogical reasoning in relational learning tasks. Constructing external knowledge bases to query from is expensive for general problems. Thus, TP is equipped with the LLM Propose, LLM Solve, and LLM Aggregate modules to produce and propagate the thoughts of solving analogous problems.
-1. LLM Propose:
-2. LLM Solve:
-3. LLM Aggregate:
 
 The TP framework is inspired by the <a href='https://arxiv.org/pdf/1704.01212.pdf'>message-passing module</a> in deep graph learning. The code of TP benefits from <a href='https://github.com/princeton-nlp/tree-of-thought-llm'>ToT</a> and <a href='https://github.com/noahshinn/reflexion'>Reflexion</a>.
 
@@ -49,13 +43,20 @@ To run TP prompting methods on this task, just run
 cd graph-algorithm-reasoning
 bash run_tp.sh
 ```
-### Evaluation
 After running experiments, the results are saved in `graph-algorithm-reasoning/logs/`. Use two `.py` files to get evaluation results.
 
 
-
 ## Creative Writing
-Coming soon.
+### Run
+Follow the instructions below to run experiments:
+```bat
+cd creative-writing
+bash bfs.sh (ToT)
+bash tp.sh (TP)
+bash cot_sampling.sh (CoT)
+bash standard_sampling.sh (IO)
+```
+
 
 ## LLM-Agent Planning
 Coming soon.
