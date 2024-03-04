@@ -57,13 +57,26 @@ bash cot_sampling.sh (CoT)
 bash standard_sampling.sh (IO)
 ```
 
-
 ## LLM-Agent Planning
-Coming soon.
+First, follow this <a href='https://github.com/alfworld/alfworld'>repo</a> to install Alfworld. Then move `planning` to the Alfworld directory. 
+<b>Notice: I failed to run this experiment on a Macbook with M2 Pro. But I managed to run it on a Macbook with Intel Core i5. This phenomenon is mostly due to the dependency of the Alfworld environment.</b>
+Run Reflexion:
+```bat
+python reflexion_alfworld.py
+```
+Run TP:
+```bat
+python tp_alfworld.py --use_memory --use_simulation
+```
+To activate/deactivate memory and simulation result in 4 variant models of TP.
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 63906db3a20a5467c16c0cfa292bbce2a50ca27d
+# Cite
+Please cite this work if you find it helpful:
+```bat
+@inproceedings{yu2023thought,
+  title={THOUGHT PROPAGATION: AN ANALOGICAL APPROACH TO COMPLEX REASONING WITH LARGE LANGUAGE MODELS},
+  author={Yu, Junchi and He, Ran and Ying, Zhitao},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024}
+}
+```
