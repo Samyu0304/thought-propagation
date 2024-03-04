@@ -44,7 +44,6 @@ After running experiments, the results are saved in `graph-algorithm-reasoning/l
 
 
 ## Creative Writing
-### Run
 Follow the instructions below to run experiments:
 ```bat
 cd creative-writing
