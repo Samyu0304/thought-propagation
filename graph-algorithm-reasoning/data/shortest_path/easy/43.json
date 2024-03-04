@@ -1,0 +1,1 @@
+{"nodes": [0, 1, 2, 3, 4], "edges": [[0, 2], [1, 2], [2, 4], [3, 4]], "distance": [1, 2, 5, 1], "shortest_path": [0, 2, 4], "shortest_length": 6}
