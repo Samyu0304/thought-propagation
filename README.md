@@ -1,6 +1,11 @@
 # [ICLR 2024] Thought Propagation: An analogical approach to complex reasoning with large language models.
 This repo holds the code, data and instructions to reproduce the results in Thought Propagation (TP).
+<<<<<<< HEAD
 # Thought-Propagation (TP)
+=======
+# Introduction
+## Thought-Propagation (TP)
+>>>>>>> 63906db3a20a5467c16c0cfa292bbce2a50ca27d
 Analogical reasoning is fundamental to human cognition as humans usually solve new problems by reusing experiences in handling similar problems. Motivated by such a reasoning process from humans, Thought Propagation (TP) teaches Large Language Models (LLMs) to explore analogous problems related to the input one and distill useful experience to facilitate input problem-solving.
 ## What is the thought in TP?
 The thought usually refers to a solution to a sub-problem of the input problem. The solution to the input problem is produced by chaining such thoughts together. <b>However, the thought in TP refers to the solution to a problem instead of a sub-problem.</b>
@@ -56,5 +61,8 @@ Coming soon.
 Coming soon.
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 63906db3a20a5467c16c0cfa292bbce2a50ca27d
