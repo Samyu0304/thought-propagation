@@ -1,8 +1,6 @@
 # [ICLR 2024] Thought Propagation: An analogical approach to complex reasoning with large language models.
 This repo holds the code, data, and instructions to reproduce the <a href='https://openreview.net/forum?id=SBoRhRCzM3&referrer=%5Bthe%20profile%20of%20Junchi%20Yu%5D(%2Fprofile%3Fid%3D~Junchi_Yu1)'>Thought Propagation (TP)</a> results.
-<<<<<<< HEAD
 # Thought-Propagation (TP)
-=======
 # Introduction
 ## Thought-Propagation (TP)
 Analogical reasoning is fundamental to human cognition as humans usually solve new problems by reusing experiences in handling similar problems. Motivated by such a reasoning process from humans, Thought Propagation (TP) teaches Large Language Models (LLMs) to explore analogous problems related to the input one and distill useful experience to facilitate input problem-solving.
@@ -60,6 +58,7 @@ bash standard_sampling.sh (IO)
 ## LLM-Agent Planning
 First, follow this <a href='https://github.com/alfworld/alfworld'>repo</a> to install Alfworld. Then move `planning` to the Alfworld directory. 
 <b>Notice: I failed to run this experiment on a Macbook with M2 Pro. But I managed to run it on a Macbook with Intel Core i5. This phenomenon is mostly due to the dependency of the Alfworld environment.</b>
+
 Run Reflexion:
 ```bat
 python reflexion_alfworld.py
